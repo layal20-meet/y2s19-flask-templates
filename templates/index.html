@@ -1,1 +1,23 @@
 <!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head> <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"
+>
+	<title></title>
+</head>
+<body>
+	<h1>spaghetti</h1>
+	<p>my name is layal</p>
+	<ul>
+		{% if opposite_day==False %}
+			{% for i in list1%}
+			<li>{{i}}</li>
+			{%endfor%}
+		{% else%}
+			{% for i in least%}
+			<li>{{i}}</li>
+			{%endfor%}
+		{%endif%}
+
+	</ul>
+</html>
